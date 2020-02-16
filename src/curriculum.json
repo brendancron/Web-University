@@ -1,0 +1,22 @@
+{
+    "/": {
+        "name": "Home",
+        "description": "hello mate",
+        "options": [
+            "/Math",
+            "/Science"
+        ]
+    },
+    "/Math": {
+        "name": "Math",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "route_up": "/",
+        "options": []
+    },
+    "/Science": {
+        "name": "Science",
+        "description": "Lorem ipsum dolor sit amet",
+        "route_up": "/",
+        "options": []
+    }
+}
