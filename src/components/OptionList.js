@@ -10,12 +10,9 @@ function OptionList({ match }) {
     });
     return (
         <div>
-            <div>
-                <div className="box go-up"> Go Up </div>
-                <h1 className="title"> {curriculum[match.url].name} </h1>
-            </div>
+            <h1 className="title"> {curriculum[match.url].name} </h1>
             <p>
-                hello mate
+                {curriculum[match.url].description}
             </p>
             <ul className="side-by-side">
                 {options}

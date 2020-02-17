@@ -4,19 +4,131 @@
         "description": "hello mate",
         "options": [
             "/Math",
-            "/Science"
+            "/Science",
+            "/ComputerScience"
         ]
     },
     "/Math": {
         "name": "Math",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "route_up": "/",
+        "description": "Your tool to model the universe",
+        "options": [
+            "/Arithmatic",
+            "/Algebra",
+            "/Geometry",
+            "/Calculus",
+            "/DiscreteMathematics",
+            "/Statistics"
+        ]
+    },
+    "/Arithmatic": {
+        "name": "Arithmatic",
+        "description": "Exploration into the properties and manipulation of numbers",
+        "options": [
+            "/ElementaryMath",
+            "/Exponents",
+            "/BinarySystems",
+            "/Sequences",
+            "/ComplexNumbers"
+        ]
+    },
+    "/ElementaryMath": {
+        "name": "Elementary Math",
+        "description": "Introduction to Mathematics",
+        "options": [
+            "/Operations"
+        ]
+    },
+    "/Operations": {
+        "name": "Operations",
+        "description": "The basic operations of math",
+        "options": [
+            "/Addition"
+        ]
+    },
+    "/Addition": {
+        "name": "Addition",
+        "description": "Adding 2 numbers together",
+        "options": [
+            "/lesson/Addition1"
+        ]
+    },
+    "/lesson/Addition1": {
+        "name": "Introduction to addition",
+        "description": "Adding 2 numbers together",
+        "options": []
+    },
+    "/Exponents": {
+        "name": "Exponents",
+        "description": "Exponents, Radicals, and Logarithms",
+        "options": []
+    },
+    "/BinarySystems": {
+        "name": "Binary Systems",
+        "description": "Binary, Hexadecimal and everything inbetween",
+        "options": []
+    },
+    "/Sequences": {
+        "name": "Sequences and Series",
+        "description": "Sequences and Series",
+        "options": []
+    },
+    "/ComplexNumbers": {
+        "name": "ComplexNumbers",
+        "description": "Exploring imaginary and complex numbers",
+        "options": []
+    },
+    "/Algebra": {
+        "name": "Algebra",
+        "description": "Discovering Variables, Functions, and Equations",
+        "options": []
+    },
+    "/Geometry": {
+        "name": "Geometry",
+        "description": "The study of points, lines, and shapes",
+        "options": []
+    },
+    "/Calculus": {
+        "name": "Calculus",
+        "description": "Deepen your understanding of functions by finding derivatives and integrals",
+        "options": []
+    },
+    "/DiscreteMathematics": {
+        "name": "Discrete Mathematics",
+        "description": "Lorem ipsum dolor sit amet",
+        "options": []
+    },
+    "/Statistics": {
+        "name": "Statistics",
+        "description": "Lorem ipsum dolor sit amet",
         "options": []
     },
     "/Science": {
         "name": "Science",
         "description": "Lorem ipsum dolor sit amet",
-        "route_up": "/",
+        "options": [
+            "/Physics",
+            "/Biology",
+            "/Chemistry"
+        ]
+    },
+    "/Physics": {
+        "name": "Physics",
+        "description": "Lorem ipsum dolor sit amet",
+        "options": []
+    },
+    "/Biology": {
+        "name": "Biology",
+        "description": "Lorem ipsum dolor sit amet",
+        "options": []
+    },
+    "/Chemistry": {
+        "name": "Chemistry",
+        "description": "Lorem ipsum dolor sit amet",
+        "options": []
+    },
+    "/ComputerScience": {
+        "name": "Computer Science",
+        "description": "Lorem ipsum dolor sit amet",
         "options": []
     }
 }

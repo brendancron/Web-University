@@ -21,3 +21,9 @@
     background: #ddd;
     color: black;
 }
+
+.navbar img {
+    position: absolute;
+    right: 0px;
+    width: 60px;
+}
