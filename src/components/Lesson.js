@@ -5,11 +5,10 @@ import "./Column.css"
 function Lesson() {
     return (
         <div>
-            <h1>Lesson</h1>
             <div className="row">
                 <div className="column col1">
-                    <h2>Column 1</h2>
-                    <p>Some text..</p>
+                    <h1>Lesson Tab</h1>
+                    <p>TODO: make button to toggle tools col, add animation to toggle, add ability to switch between tools, add tool filter</p>
                 </div>
                 <div className="column col2">
                     <Tools />
