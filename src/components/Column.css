@@ -1,23 +1,46 @@
-* {
-    box-sizing: border-box;
+  .toggleBtn {
+    top: 1vh;
+    right: 1vw;
+    background-color: #cba;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    border: #000 1px solid;
+    padding: 1rem;
   }
 
-.column {
-    float: left;
-    width: 50%;
+  .toggleBtn:hover {
+    background-color: #abc;
   }
-  
-  /* Clear floats after the columns */
+
+  .row {
+    width: 100%;
+    background-color:#aaa;
+    transition: all 0s;
+  }
+
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  .col1 {
-    background-color:#aaa;
+  .lcol {
+    float: left;
+    width: 50%;
+    position: relative;
   }
 
-  .col2 {
+  .rcol {
     background-color:#bbb;
+    float: left;
+    width: 50%;
+    position: relative;
+    transition: transform 2s ease-in-out;
   }
+
+  

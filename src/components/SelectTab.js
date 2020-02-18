@@ -2,34 +2,46 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SelectTab.css';
 import '../Hover.css';
+import GradeWheel from './GradeWheel.js'
 
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
-
-class SelectTab extends React.Component {
+export default class SelectTab extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            show: false
+        }
+        this.mouseEnter = this.mouseEnter.bind(this);
+        this.mouseExit = this.mouseExit.bind(this);
+    }
+    mouseEnter() {
+        this.setState({
+            show: true
+        })
+    }
+    mouseExit() {
+        this.setState({
+            show: false
+        })
+    }
+    renderImg() {
+        try {
+            return <img src={require(`../images${this.props.path}.svg`)} alt="default img" />
+        } catch (err) {
+            return <img src={require('../images/default.svg')} alt="default img" />
+        }
+    }
     render() {
         return (
             <li>
                 <Link to={this.props.path}>
-                    <div className="box choice_box">
+                    <div className="box choice_box" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseExit}>
                         <div className="img_container">
-                            <img src={require('../images/test.svg')} alt="my img"></img>
+                            {this.renderImg()}
                         </div>
                         <h1>{this.props.info.name}</h1>
                         <p>{this.props.info.description}</p>
                         <div className="progress-div">
-                            <CircularProgressbar
-                                value={50}
-                                text={`50%`}
-                                background
-                                backgroundPadding={6}
-                                styles={buildStyles({
-                                    backgroundColor: "#3e98c7",
-                                    textColor: "#fff",
-                                    pathColor: "#fff",
-                                    trailColor: "transparent"
-                                })}
-                            />
+                            {this.state.show && <GradeWheel percentage={localStorage[this.props.path]} show={this.state.show} />}
                         </div>
                     </div>
                 </Link>
@@ -37,5 +49,3 @@ class SelectTab extends React.Component {
         );
     }
 }
-
-export default SelectTab;

@@ -2,20 +2,49 @@ import React from 'react';
 import Tools from './Tools'
 import "./Column.css"
 
-function Lesson() {
-    return (
-        <div>
-            <div className="row">
-                <div className="column col1">
-                    <h1>Lesson Tab</h1>
-                    <p>TODO: make button to toggle tools col, add animation to toggle, add ability to switch between tools, add tool filter</p>
-                </div>
-                <div className="column col2">
-                    <Tools />
-                </div>
-            </div>
-        </div>
-    );
-}
+export default class Lesson extends React.Component {
+    constructor() {
+        super();
+        this.showTools = false;
+        this.state = {
+            rowWidth: '200%',
+            delay: '2s',
+            translation: '100%'
+        }
+        this.toggleCol = this.toggleCol.bind(this);
+    }
 
-export default Lesson;
+    toggleCol() {
+        this.showTools = !this.showTools;
+        if (this.showTools) {
+            this.setState({
+                rowWidth: '100%',
+                delay: '0s',
+                translation: '0%'
+            });
+        } else {
+            this.setState({
+                rowWidth: '200%',
+                delay: '2s',
+                translation: '100%'
+            });
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <div className="row" style={{ width: this.state.rowWidth, transitionDelay: this.state.delay }}>
+                    <div className="lcol">
+                        <div className="toggleBtn" onClick={this.toggleCol}>Toggle Tools</div>
+                        <h1>Lesson Tab</h1>
+                        <p>add tool filter</p>
+                    </div>
+                    <div className="rcol" style={{ transform: `translate(${this.state.translation},0px)` }}>
+                        <Tools />
+                    </div>
+                </div>
+            </div >
+        );
+    }
+}

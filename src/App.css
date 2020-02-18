@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  overflow: hidden;
+  margin-top: 47px;
 }
 
 .App-logo {
@@ -26,8 +28,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.top-buffer {
-  height: 40px;
 }

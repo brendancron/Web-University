@@ -2,7 +2,7 @@ import React from 'react';
 import SelectTab from './SelectTab.js'
 import './List.css';
 import '../Hover.css';
-import curriculum from '../curriculum.json'
+import curriculum from '../curriculum.json';
 
 function OptionList({ match }) {
     const options = curriculum[match.url].options.map((path) => {

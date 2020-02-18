@@ -38,7 +38,6 @@ function App() {
         <Link className="link" to="/Tools">Tools</Link>
         <img src={require('./logo.svg')} alt="icon"></img>
       </div>
-      <div className="top-buffer"></div>
       <div className="App">
         <Route path="/" exact component={Home} />
         <Switch>

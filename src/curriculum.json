@@ -12,7 +12,7 @@
         "name": "Math",
         "description": "Your tool to model the universe",
         "options": [
-            "/Arithmatic",
+            "/Arithmetic",
             "/Algebra",
             "/Geometry",
             "/Calculus",
@@ -20,8 +20,8 @@
             "/Statistics"
         ]
     },
-    "/Arithmatic": {
-        "name": "Arithmatic",
+    "/Arithmetic": {
+        "name": "Arithmetic",
         "description": "Exploration into the properties and manipulation of numbers",
         "options": [
             "/ElementaryMath",
@@ -54,8 +54,7 @@
     },
     "/lesson/Addition1": {
         "name": "Introduction to addition",
-        "description": "Adding 2 numbers together",
-        "options": []
+        "description": "Adding 2 numbers together"
     },
     "/Exponents": {
         "name": "Exponents",
