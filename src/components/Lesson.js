@@ -6,7 +6,6 @@ import "./Lesson.css"
 export default class Lesson extends React.Component {
     constructor(obj) {
         super(obj);
-        console.log(obj);
         this.state = {
             showTools: false,
             rowWidth: '200%',

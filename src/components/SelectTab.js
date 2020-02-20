@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SelectTab.css';
 import '../Hover.css';
-import GradeWheel from './GradeWheel.js'
+import GradeWheel from './GradeWheel.js';
+import Grades from './Grades.js';
 
 export default class SelectTab extends React.Component {
     constructor() {
@@ -30,6 +31,14 @@ export default class SelectTab extends React.Component {
             return <img src={require('../images/default.svg')} alt="default img" />
         }
     }
+    getWheel() {
+        return (
+            this.state.show &&
+            (typeof this.props.data.showGrade !== 'undefined') &&
+            (this.props.data.showGrade) &&
+            <GradeWheel percentage={Grades.getGrade(this.props.data.path)} show={this.state.show} />
+        );
+    }
     render() {
         return (
             <li>
@@ -41,7 +50,7 @@ export default class SelectTab extends React.Component {
                         <h1>{this.props.data.name}</h1>
                         <p>{this.props.data.description}</p>
                         <div className="progress-div">
-                            {this.state.show && <GradeWheel percentage={localStorage[this.props.data.path]} show={this.state.show} />}
+                            {this.getWheel()}
                         </div>
                     </div>
                 </Link>

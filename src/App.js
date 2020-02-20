@@ -17,12 +17,15 @@ import Tools from './components/Tools';
 import curriculum from './curriculum.json';
 
 export default class App extends React.Component {
-  getRoutes(obj, name, routes) {
+  static getGrade() {
+    return 50;
+  }
+  getRoutes(obj, name, path, routes) {
     if (typeof obj.subClasses === 'undefined') {
       routes.push(
         <Route
-          key={name}
-          path={name}
+          key={path}
+          path={path}
           exact
           render={(props) => <Lesson {...props} classData={obj} />}
         />
@@ -31,23 +34,25 @@ export default class App extends React.Component {
       let data = {
         name: obj.name,
         description: obj.description,
+        showGrade: obj.showGrade,
         options: []
       }
       for (var sub in obj.subClasses) {
         let info = {
-          path: sub,
+          path: path + sub,
           name: obj.subClasses[sub].name,
-          description: obj.subClasses[sub].description
+          description: obj.subClasses[sub].description,
+          showGrade: obj.showGrade
         }
         data.options.push(info);
         routes.concat(
-          this.getRoutes(obj.subClasses[sub], sub, routes)
+          this.getRoutes(obj.subClasses[sub], sub, path + sub, routes)
         );
       }
       routes.push(
         <Route
-          key={name}
-          path={name}
+          key={path}
+          path={path}
           exact
           render={(props) => <OptionList {...props} optionData={data} />}
         />
@@ -56,7 +61,7 @@ export default class App extends React.Component {
     return routes;
   }
   render() {
-    let routes = this.getRoutes(curriculum['/'], '/', []);
+    let routes = this.getRoutes(curriculum['/'], '/', '/', []);
     return (
       <Router>
         <div className="navbar">

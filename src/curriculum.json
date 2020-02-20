@@ -3,88 +3,90 @@
         "name": "Home",
         "description": "hello mate",
         "subClasses": {
-            "/Math": {
+            "Math/": {
                 "name": "Math",
                 "description": "Your tool to model the universe",
                 "subClasses": {
-                    "/Arithmetic": {
+                    "Arithmetic/": {
                         "name": "Arithmetic",
                         "description": "Exploration into the properties and manipulation of numbers",
                         "subClasses": {
-                            "/ElementaryMath": {
+                            "ElementaryMath/": {
                                 "name": "Elementary Math",
                                 "description": "Introduction to Mathematics",
                                 "subClasses": {
-                                    "/Operations": {
+                                    "Operations/": {
                                         "name": "Operations",
                                         "description": "The basic operations of math",
+                                        "showGrade": true,
                                         "subClasses": {
-                                            "/Counting": {
+                                            "Counting/": {
                                                 "name": "Counting",
                                                 "description": "Learning how to read and translate numbers",
+                                                "showGrade": true,
                                                 "subClasses": {
-                                                    "/Counting1": {
+                                                    "Counting1/": {
                                                         "name": "Counting With Small Numbers",
                                                         "description": "Counting With Small Numbers",
                                                         "URL": "https://www.youtube.com/embed/y2-uaPiyoxc"
                                                     },
-                                                    "/Counting2": {
+                                                    "Counting2/": {
                                                         "name": "Counting In Order",
                                                         "description": "Counting In Order",
                                                         "URL": "https://www.youtube.com/embed/PEeUTQ0Gri8"
                                                     },
-                                                    "/Counting3": {
+                                                    "Counting3/": {
                                                         "name": "Number Grid",
                                                         "description": "Number Grid",
                                                         "URL": "https://www.youtube.com/embed/9XZypM2Z3Ro"
                                                     },
-                                                    "/Counting4": {
+                                                    "Counting4/": {
                                                         "name": "Missing Numbers",
                                                         "description": "Missing Numbers",
                                                         "URL": "https://www.youtube.com/embed/1AqkBdCBm9o"
                                                     },
-                                                    "/Counting5": {
+                                                    "Counting5/": {
                                                         "name": "Counting By Tens",
                                                         "description": "Counting By Tens",
                                                         "URL": "https://www.youtube.com/embed/UnPpFw3natI"
                                                     },
-                                                    "/Counting6": {
+                                                    "Counting6/": {
                                                         "name": "Counting In Pictures",
                                                         "description": "Counting In Pictures",
                                                         "URL": "https://www.youtube.com/embed/leDYnoNSvD4"
                                                     },
-                                                    "/Counting7": {
+                                                    "Counting7/": {
                                                         "name": "Counting Objects 1",
                                                         "description": "Counting Objects 1",
                                                         "URL": "https://www.youtube.com/embed/I9S5CvSqb5A"
                                                     },
-                                                    "/Counting8": {
+                                                    "Counting8/": {
                                                         "name": "Counting Objects 2",
                                                         "description": "Counting Objects 2",
                                                         "URL": "https://www.youtube.com/embed/EUqhLxFccbM"
                                                     },
-                                                    "/Counting9": {
+                                                    "Counting9/": {
                                                         "name": "Comparing Numbers",
                                                         "description": "Comparing Numbers",
                                                         "URL": "https://www.youtube.com/embed/__nkbr6DeTg"
                                                     },
-                                                    "/Counting10": {
+                                                    "Counting10/": {
                                                         "name": "Comparing Number Line",
                                                         "description": "Comparing Number Line",
                                                         "URL": "https://www.youtube.com/embed/tJrSILRXOUc"
                                                     },
-                                                    "/Counting11": {
+                                                    "Counting11/": {
                                                         "name": "Counting By Category",
                                                         "description": "Counting By Category",
                                                         "URL": "https://www.youtube.com/embed/UA975j_qsTQ"
                                                     }
                                                 }
                                             },
-                                            "/Addition": {
+                                            "Addition/": {
                                                 "name": "Addition",
                                                 "description": "Adding 2 numbers together",
                                                 "subClasses": {
-                                                    "/Addition1": {
+                                                    "Addition1/": {
                                                         "name": "Introduction to addition",
                                                         "description": "Adding 2 numbers together",
                                                         "lessonType": "video",
@@ -96,77 +98,77 @@
                                     }
                                 }
                             },
-                            "/Exponents": {
+                            "Exponents/": {
                                 "name": "Exponents",
                                 "description": "Exponents, Radicals, and Logarithms",
                                 "subClasses": {}
                             },
-                            "/BinarySystems": {
+                            "BinarySystems/": {
                                 "name": "Binary Systems",
                                 "description": "Binary, Hexadecimal and everything inbetween",
                                 "subClasses": {}
                             },
-                            "/Sequences": {
+                            "Sequences/": {
                                 "name": "Sequences and Series",
                                 "description": "Sequences and Series",
                                 "subClasses": {}
                             },
-                            "/ComplexNumbers": {
+                            "ComplexNumbers/": {
                                 "name": "ComplexNumbers",
                                 "description": "Exploring imaginary and complex numbers",
                                 "subClasses": {}
                             }
                         }
                     },
-                    "/Algebra": {
+                    "Algebra/": {
                         "name": "Algebra",
                         "description": "Discovering Variables, Functions, and Equations",
                         "subClasses": {}
                     },
-                    "/Geometry": {
+                    "Geometry/": {
                         "name": "Geometry",
                         "description": "The study of points, lines, and shapes",
                         "subClasses": {}
                     },
-                    "/Calculus": {
+                    "Calculus/": {
                         "name": "Calculus",
                         "description": "Deepen your understanding of functions by finding derivatives and integrals",
                         "subClasses": {}
                     },
-                    "/DiscreteMathematics": {
+                    "DiscreteMathematics/": {
                         "name": "Discrete Mathematics",
                         "description": "Lorem ipsum dolor sit amet",
                         "subClasses": {}
                     },
-                    "/Statistics": {
+                    "Statistics/": {
                         "name": "Statistics",
                         "description": "Lorem ipsum dolor sit amet",
                         "subClasses": {}
                     }
                 }
             },
-            "/Science": {
+            "Science/": {
                 "name": "Science",
                 "description": "Lorem ipsum dolor sit amet",
                 "subClasses": {
-                    "/Physics": {
+                    "Physics/": {
                         "name": "Physics",
                         "description": "Lorem ipsum dolor sit amet",
                         "subClasses": {}
                     },
-                    "/Biology": {
+                    "Biology/": {
                         "name": "Biology",
                         "description": "Lorem ipsum dolor sit amet",
                         "subClasses": {}
                     },
-                    "/Chemistry": {
+                    "Chemistry/": {
                         "name": "Chemistry",
                         "description": "Lorem ipsum dolor sit amet",
                         "subClasses": {}
                     }
                 }
             },
-            "/ComputerScience": {
+            "ComputerScience/": {
                 "name": "Computer Science",
                 "description": "Lorem ipsum dolor sit amet",
                 "subClasses": {}

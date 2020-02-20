@@ -10,11 +10,11 @@ export default class Account extends React.Component {
         this.reset = this.reset.bind(this);
     }
     increment() {
-        var value = parseInt(localStorage.getItem("/lesson/Addition1"));
+        var value = parseInt(localStorage.getItem("Counting1/"));
         if (Number.isNaN(value)) {
-            localStorage.setItem("/lesson/Addition1", 1);
+            localStorage.setItem("Counting1/", 2);
         } else {
-            localStorage.setItem("/lesson/Addition1", value + 1);
+            localStorage.setItem("Counting1/", value + 2);
         }
         console.log(localStorage);
     }

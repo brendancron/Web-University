@@ -18,7 +18,7 @@ export default class Donate extends React.Component {
                 <svg viewBox="0 0 100 100">
                     <circle className="mask" cx="50" cy="50" r="43" style={style} />
                     {(this.props.percentage > 0) && <circle className="fill" cx="50" cy="50" r="43" style={style} />}
-                    <text x="50" y="58" className="percentage">{(this.props.percentage > 0) ? `${this.props.percentage}%` : 'Learn!'}</text>
+                    <text x="50" y="58" className="percentage">{(this.props.percentage > 0) ? `${Math.round(this.props.percentage)}%` : 'Learn!'}</text>
                 </svg>
             </div>
         );
