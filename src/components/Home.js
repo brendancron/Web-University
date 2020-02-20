@@ -5,10 +5,10 @@ function Home() {
         <div>
             <h1>Home</h1>
             <p>This only Appears on the home page</p>
-            <p>Add Color to grade wheel,
+            <p>
                 set gradewheels to only appear on some selecttabs,
-                make accurate grades,
-                remove bug on changing pages and gradewheel not showing</p>
+                remove bug on changing pages and gradewheel not showing
+                </p>
         </div>
     );
 }

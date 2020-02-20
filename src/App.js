@@ -16,41 +16,58 @@ import Tools from './components/Tools';
 
 import curriculum from './curriculum.json';
 
-function App() {
-  let routes = [];
-  for (var path in curriculum) {
-    if (Object.prototype.hasOwnProperty.call(curriculum, path)) {
-      const routing_path = (path === "/") ? "/" : (path.startsWith("/lesson")) ? "/lesson/:id" : "/:id";
-      const comp = (path.startsWith("/lesson")) ? Lesson : OptionList
-      routes.push(
-        <Route key={path} path={routing_path} exact component={comp} />
-      );
+export default class App extends React.Component {
+  // getRoutes(obj, name, routes) {
+  //   if (obj.subClasses === 'undefined') {
+  //     routes.push(
+  //       <Route key={name} path={name} exact component={Lesson} />
+  //     );
+  //     return routes;
+  //   } else {
+  //     routes.push(
+  //       <Route key={name} path={name} exact component={OptionList} />
+  //     );
+  //     for (var sub in obj.subClasses) {
+  //       routes = routes.concat(
+  //         this.getRoutes(obj.subClasses[sub], sub, routes)
+  //       );
+  //     }
+  //   }
+  // }
+  render() {
+    let routes = [];
+    for (var path in curriculum) {
+      if (Object.prototype.hasOwnProperty.call(curriculum, path)) {
+        const routing_path = (path === "/") ? "/" : (path.startsWith("/lesson")) ? "/lesson/:id" : "/:id";
+        const comp = (path.startsWith("/lesson")) ? Lesson : OptionList
+        routes.push(
+          <Route key={path} path={routing_path} exact component={comp} />
+        );
+      }
     }
+    return (
+      <Router>
+        <div className="navbar">
+          <Link className="link" to="/">Home</Link>
+          <Link className="link" to="/Account">Account</Link>
+          <Link className="link" to="/About">About</Link>
+          <Link className="link" to="/Donate">Donate</Link>
+          <Link className="link" to="/Contact">Contact</Link>
+          <Link className="link" to="/Tools">Tools</Link>
+          <img src={require('./logo.svg')} alt="icon"></img>
+        </div>
+        <div className="App">
+          <Route path="/" exact component={Home} />
+          <Switch>
+            <Route path="/Account" exact component={Account} />
+            <Route path="/About" exact component={About} />
+            <Route path="/Donate" exact component={Donate} />
+            <Route path="/Contact" exact component={Contact} />
+            <Route path="/Tools" exact component={Tools} />
+            {routes}
+          </Switch>
+        </div>
+      </Router>
+    );
   }
-  return (
-    <Router>
-      <div className="navbar">
-        <Link className="link" to="/">Home</Link>
-        <Link className="link" to="/Account">Account</Link>
-        <Link className="link" to="/About">About</Link>
-        <Link className="link" to="/Donate">Donate</Link>
-        <Link className="link" to="/Contact">Contact</Link>
-        <Link className="link" to="/Tools">Tools</Link>
-        <img src={require('./logo.svg')} alt="icon"></img>
-      </div>
-      <div className="App">
-        <Route path="/" exact component={Home} />
-        <Switch>
-          <Route path="/Account" exact component={Account} />
-          <Route path="/About" exact component={About} />
-          <Route path="/Donate" exact component={Donate} />
-          <Route path="/Contact" exact component={Contact} />
-          <Route path="/Tools" exact component={Tools} />
-          {routes}
-        </Switch>
-      </div>
-    </Router>
-  );
 }
-
-export default App;

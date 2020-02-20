@@ -19,7 +19,7 @@
 
   .row {
     width: 100%;
-    background-color:#aaa;
+    height: 100%;
     transition: all 0s;
   }
 
@@ -36,9 +36,9 @@
   }
 
   .rcol {
-    background-color:#bbb;
     float: left;
     width: 50%;
+    background-color: #ccc;
     position: relative;
     transition: transform 2s ease-in-out;
   }

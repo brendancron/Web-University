@@ -42,8 +42,81 @@
         "name": "Operations",
         "description": "The basic operations of math",
         "options": [
+            "/Counting",
             "/Addition"
         ]
+    },
+    "/Counting": {
+        "name": "Counting",
+        "description": "Learning how to read and translate numbers",
+        "options": [
+            "/lesson/Counting1",
+            "/lesson/Counting2",
+            "/lesson/Counting3",
+            "/lesson/Counting4",
+            "/lesson/Counting5",
+            "/lesson/Counting6",
+            "/lesson/Counting7",
+            "/lesson/Counting8",
+            "/lesson/Counting9",
+            "/lesson/Counting10",
+            "/lesson/Counting11"
+        ]
+    },
+    "/lesson/Counting1": {
+        "name": "Counting With Small Numbers",
+        "description": "Counting With Small Numbers",
+        "URL": "https://www.youtube.com/embed/y2-uaPiyoxc"
+    },
+    "/lesson/Counting2": {
+        "name": "Counting In Order",
+        "description": "Counting In Order",
+        "URL": "https://www.youtube.com/embed/PEeUTQ0Gri8"
+    },
+    "/lesson/Counting3": {
+        "name": "Number Grid",
+        "description": "Number Grid",
+        "URL": "https://www.youtube.com/embed/9XZypM2Z3Ro"
+    },
+    "/lesson/Counting4": {
+        "name": "Missing Numbers",
+        "description": "Missing Numbers",
+        "URL": "https://www.youtube.com/embed/1AqkBdCBm9o"
+    },
+    "/lesson/Counting5": {
+        "name": "Counting By Tens",
+        "description": "Counting By Tens",
+        "URL": "https://www.youtube.com/embed/UnPpFw3natI"
+    },
+    "/lesson/Counting6": {
+        "name": "Counting In Pictures",
+        "description": "Counting In Pictures",
+        "URL": "https://www.youtube.com/embed/leDYnoNSvD4"
+    },
+    "/lesson/Counting7": {
+        "name": "Counting Objects 1",
+        "description": "Counting Objects 1",
+        "URL": "https://www.youtube.com/embed/I9S5CvSqb5A"
+    },
+    "/lesson/Counting8": {
+        "name": "Counting Objects 2",
+        "description": "Counting Objects 2",
+        "URL": "https://www.youtube.com/embed/EUqhLxFccbM"
+    },
+    "/lesson/Counting9": {
+        "name": "Comparing Numbers",
+        "description": "Comparing Numbers",
+        "URL": "https://www.youtube.com/embed/__nkbr6DeTg"
+    },
+    "/lesson/Counting10": {
+        "name": "Comparing Number Line",
+        "description": "Comparing Number Line",
+        "URL": "https://www.youtube.com/embed/tJrSILRXOUc"
+    },
+    "/lesson/Counting11": {
+        "name": "Counting By Category",
+        "description": "Counting By Category",
+        "URL": "https://www.youtube.com/embed/UA975j_qsTQ"
     },
     "/Addition": {
         "name": "Addition",
@@ -54,7 +127,9 @@
     },
     "/lesson/Addition1": {
         "name": "Introduction to addition",
-        "description": "Adding 2 numbers together"
+        "description": "Adding 2 numbers together",
+        "lessonType": "video",
+        "URL": "https://www.youtube.com/embed/fsTD_jqseBA"
     },
     "/Exponents": {
         "name": "Exponents",
