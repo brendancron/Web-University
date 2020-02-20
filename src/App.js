@@ -17,34 +17,46 @@ import Tools from './components/Tools';
 import curriculum from './curriculum.json';
 
 export default class App extends React.Component {
-  // getRoutes(obj, name, routes) {
-  //   if (obj.subClasses === 'undefined') {
-  //     routes.push(
-  //       <Route key={name} path={name} exact component={Lesson} />
-  //     );
-  //     return routes;
-  //   } else {
-  //     routes.push(
-  //       <Route key={name} path={name} exact component={OptionList} />
-  //     );
-  //     for (var sub in obj.subClasses) {
-  //       routes = routes.concat(
-  //         this.getRoutes(obj.subClasses[sub], sub, routes)
-  //       );
-  //     }
-  //   }
-  // }
-  render() {
-    let routes = [];
-    for (var path in curriculum) {
-      if (Object.prototype.hasOwnProperty.call(curriculum, path)) {
-        const routing_path = (path === "/") ? "/" : (path.startsWith("/lesson")) ? "/lesson/:id" : "/:id";
-        const comp = (path.startsWith("/lesson")) ? Lesson : OptionList
-        routes.push(
-          <Route key={path} path={routing_path} exact component={comp} />
+  getRoutes(obj, name, routes) {
+    if (typeof obj.subClasses === 'undefined') {
+      routes.push(
+        <Route
+          key={name}
+          path={name}
+          exact
+          render={(props) => <Lesson {...props} classData={obj} />}
+        />
+      );
+    } else {
+      let data = {
+        name: obj.name,
+        description: obj.description,
+        options: []
+      }
+      for (var sub in obj.subClasses) {
+        let info = {
+          path: sub,
+          name: obj.subClasses[sub].name,
+          description: obj.subClasses[sub].description
+        }
+        data.options.push(info);
+        routes.concat(
+          this.getRoutes(obj.subClasses[sub], sub, routes)
         );
       }
+      routes.push(
+        <Route
+          key={name}
+          path={name}
+          exact
+          render={(props) => <OptionList {...props} optionData={data} />}
+        />
+      );
     }
+    return routes;
+  }
+  render() {
+    let routes = this.getRoutes(curriculum['/'], '/', []);
     return (
       <Router>
         <div className="navbar">

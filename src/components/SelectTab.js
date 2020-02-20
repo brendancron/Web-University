@@ -25,7 +25,7 @@ export default class SelectTab extends React.Component {
     }
     renderImg() {
         try {
-            return <img src={require(`../images${this.props.path}.svg`)} alt="default img" />
+            return <img src={require(`../images${this.props.data.path}.svg`)} alt="default img" />
         } catch (err) {
             return <img src={require('../images/default.svg')} alt="default img" />
         }
@@ -33,15 +33,15 @@ export default class SelectTab extends React.Component {
     render() {
         return (
             <li>
-                <Link to={this.props.path}>
+                <Link to={this.props.data.path}>
                     <div className="box choice_box" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseExit}>
                         <div className="img_container">
                             {this.renderImg()}
                         </div>
-                        <h1>{this.props.info.name}</h1>
-                        <p>{this.props.info.description}</p>
+                        <h1>{this.props.data.name}</h1>
+                        <p>{this.props.data.description}</p>
                         <div className="progress-div">
-                            {this.state.show && <GradeWheel percentage={localStorage[this.props.path]} show={this.state.show} />}
+                            {this.state.show && <GradeWheel percentage={localStorage[this.props.data.path]} show={this.state.show} />}
                         </div>
                     </div>
                 </Link>
