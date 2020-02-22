@@ -1,0 +1,15 @@
+.path-btn {
+    all: unset;
+    position: absolute;
+    border: black 1px solid;
+    font-size: 32px;
+    left: 10px;
+    top: 60px;
+    padding: 5px;
+    background-color: #eee;
+    cursor: default;
+}
+
+.path-btn:hover {
+    background-color: #ccc;
+}

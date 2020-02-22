@@ -1,0 +1,35 @@
+.content {
+    justify-content: center;
+}
+
+.vision-statement {
+    margin: 10px;
+    width: 50%;
+    font-size: 40px;
+    position: relative;
+    animation: slide-left 7s forwards;
+
+}
+
+.mission-statement {
+    margin: 10px;
+    width: 50%;
+    font-size: 40px;
+    position: relative;
+    animation: slide-right 7s forwards;
+}
+
+.title {
+    margin: 20px;
+    font-size: 60px;
+}
+
+@keyframes slide-left {
+    from{left: 100vw;}
+    to{left: 25vw;}
+}
+
+@keyframes slide-right {
+    from{left: -50vw;}
+    to{left: 25vw;}
+}

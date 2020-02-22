@@ -11,6 +11,7 @@ img {
   background-color: #dcdcdc;
   width: 300px;
   height: 350px;
+  cursor: default;
 }
 
 .progress-div {
