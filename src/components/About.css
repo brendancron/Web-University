@@ -7,7 +7,7 @@
     width: 50%;
     font-size: 40px;
     position: relative;
-    animation: slide-left 7s forwards;
+    animation: slide-left 4s forwards;
 
 }
 
@@ -16,7 +16,7 @@
     width: 50%;
     font-size: 40px;
     position: relative;
-    animation: slide-right 7s forwards;
+    animation: slide-right 4s forwards;
 }
 
 .title {

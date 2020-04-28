@@ -7,110 +7,48 @@
                 "name": "Math",
                 "description": "Your tool to model the universe",
                 "subClasses": {
-                    "Arithmetic/": {
-                        "name": "Arithmetic",
+                    "NumberSystems/": {
+                        "name": "Number Systems",
                         "description": "Exploration into the properties and manipulation of numbers",
                         "subClasses": {
-                            "ElementaryMath/": {
-                                "name": "Elementary Math",
-                                "description": "Introduction to Mathematics",
-                                "subClasses": {
-                                    "Operations/": {
-                                        "name": "Operations",
-                                        "description": "The basic operations of math",
-                                        "showGrade": true,
-                                        "subClasses": {
-                                            "Counting/": {
-                                                "name": "Counting",
-                                                "description": "Learning how to read and translate numbers",
-                                                "showGrade": true,
-                                                "subClasses": {
-                                                    "Counting1/": {
-                                                        "name": "Counting With Small Numbers",
-                                                        "description": "Counting With Small Numbers",
-                                                        "URL": "https://www.youtube.com/embed/y2-uaPiyoxc"
-                                                    },
-                                                    "Counting2/": {
-                                                        "name": "Counting In Order",
-                                                        "description": "Counting In Order",
-                                                        "URL": "https://www.youtube.com/embed/PEeUTQ0Gri8"
-                                                    },
-                                                    "Counting3/": {
-                                                        "name": "Number Grid",
-                                                        "description": "Number Grid",
-                                                        "URL": "https://www.youtube.com/embed/9XZypM2Z3Ro"
-                                                    },
-                                                    "Counting4/": {
-                                                        "name": "Missing Numbers",
-                                                        "description": "Missing Numbers",
-                                                        "URL": "https://www.youtube.com/embed/1AqkBdCBm9o"
-                                                    },
-                                                    "Counting5/": {
-                                                        "name": "Counting By Tens",
-                                                        "description": "Counting By Tens",
-                                                        "URL": "https://www.youtube.com/embed/UnPpFw3natI"
-                                                    },
-                                                    "Counting6/": {
-                                                        "name": "Counting In Pictures",
-                                                        "description": "Counting In Pictures",
-                                                        "URL": "https://www.youtube.com/embed/leDYnoNSvD4"
-                                                    },
-                                                    "Counting7/": {
-                                                        "name": "Counting Objects 1",
-                                                        "description": "Counting Objects 1",
-                                                        "URL": "https://www.youtube.com/embed/I9S5CvSqb5A"
-                                                    },
-                                                    "Counting8/": {
-                                                        "name": "Counting Objects 2",
-                                                        "description": "Counting Objects 2",
-                                                        "URL": "https://www.youtube.com/embed/EUqhLxFccbM"
-                                                    },
-                                                    "Counting9/": {
-                                                        "name": "Comparing Numbers",
-                                                        "description": "Comparing Numbers",
-                                                        "URL": "https://www.youtube.com/embed/__nkbr6DeTg"
-                                                    },
-                                                    "Counting10/": {
-                                                        "name": "Comparing Number Line",
-                                                        "description": "Comparing Number Line",
-                                                        "URL": "https://www.youtube.com/embed/tJrSILRXOUc"
-                                                    },
-                                                    "Counting11/": {
-                                                        "name": "Counting By Category",
-                                                        "description": "Counting By Category",
-                                                        "URL": "https://www.youtube.com/embed/UA975j_qsTQ"
-                                                    }
-                                                }
-                                            },
-                                            "Addition/": {
-                                                "name": "Addition",
-                                                "description": "Adding 2 numbers together",
-                                                "subClasses": {
-                                                    "Addition1/": {
-                                                        "name": "Introduction to addition",
-                                                        "description": "Adding 2 numbers together",
-                                                        "lessonType": "video",
-                                                        "URL": "https://www.youtube.com/embed/fsTD_jqseBA"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+                            "NaturalNumbers/": {
+                                "name": "Natural Numbers",
+                                "description": "Counting and Comparisons",
+                                "subClasses": {}
                             },
-                            "Exponents/": {
-                                "name": "Exponents",
-                                "description": "Exponents, Radicals, and Logarithms",
+                            "Arithmetic/": {
+                                "name": "Arithmetic",
+                                "description": "Basic Operations",
+                                "subClasses": {}
+                            },
+                            "Integers/": {
+                                "name": "Integers",
+                                "description": "The idea of negative numbers",
+                                "subClasses": {}
+                            },
+                            "RationalNumbers/": {
+                                "name": "Rational Numbers",
+                                "description": "Fractions, decimals, and the works",
+                                "subClasses": {}
+                            },
+                            "RealNumbers/": {
+                                "name": "Real Numbers",
+                                "description": "Irrational numbers",
+                                "subClasses": {}
+                            },
+                            "PrimeNumbers/": {
+                                "name": "Prime Numbers",
+                                "description": "Irrational numbers",
+                                "subClasses": {}
+                            },
+                            "Infinity/": {
+                                "name": "Infinity",
+                                "description": "The idea of infinity",
                                 "subClasses": {}
                             },
                             "BinarySystems/": {
                                 "name": "Binary Systems",
                                 "description": "Binary, Hexadecimal and everything inbetween",
-                                "subClasses": {}
-                            },
-                            "Sequences/": {
-                                "name": "Sequences and Series",
-                                "description": "Sequences and Series",
                                 "subClasses": {}
                             },
                             "ComplexNumbers/": {
@@ -120,30 +58,309 @@
                             }
                         }
                     },
-                    "Algebra/": {
-                        "name": "Algebra",
-                        "description": "Discovering Variables, Functions, and Equations",
-                        "subClasses": {}
+                    "Structures/": {
+                        "name": "Structures",
+                        "description": "Everything about the structure of mathematics",
+                        "subClasses": {
+                            "Algebra/": {
+                                "name": "Algebra",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "Summations/": {
+                                "name": "Summations",
+                                "description": "Everything you need to know about summations",
+                                "subClasses": {
+                                    "SigmaNotation/": {
+                                        "name": "SigmaNotation",
+                                        "description": "Introduction to the sigma notation",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "GaussSum/": {
+                                        "name": "Gauss's Sum",
+                                        "description": "Simple Gauss Sum and variations",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "SummationRules/": {
+                                        "name": "Introduction To Calculus",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "DistributionLaw/": {
+                                        "name": "Distribution Law",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "InterchangeOrder/": {
+                                        "name": "Interchange Order",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "TelescopingSeries/": {
+                                        "name": "Telescoping Series",
+                                        "description": "A simple telescoping Series",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "QuadraticSeries/": {
+                                        "name": "Quadratic Series",
+                                        "description": "Applying Gauss's Sum to higher orders",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "DoublingSeries/": {
+                                        "name": "Doubling Series",
+                                        "description": "A series that doubles every time",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "GeometricSeries/": {
+                                        "name": "Geometric Series",
+                                        "description": "Geometric Series",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "HarmonicSeries/": {
+                                        "name": "Harmonic Series",
+                                        "description": "The Harmonic Series",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "ComplexSeries/": {
+                                        "name": "Complex Series",
+                                        "description": "How to calculate nested Series",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    }
+                                }
+                            },
+                            "Recurrences/": {
+                                "name": "Recurrences",
+                                "description": "How to solve Mathematical Recurrences",
+                                "subClasses": {
+                                    "TreeMethod/": {
+                                        "name": "Tree Method",
+                                        "description": "Introduction to the Tree Method",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    }
+                                }
+                            },
+                            "LinearAlgebra/": {
+                                "name": "Linear Algebra",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "NumberTheory/": {
+                                "name": "Number Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "PartitionTheory/": {
+                                "name": "Partition Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "GraphTheory/": {
+                                "name": "Graph Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "GroupTheory/": {
+                                "name": "Group Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "Combinatorics/": {
+                                "name": "Combinatorics",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "OrderTheory/": {
+                                "name": "Order Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "MeasureTheory/": {
+                                "name": "Measure Theory",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            }
+                        }
                     },
-                    "Geometry/": {
-                        "name": "Geometry",
-                        "description": "The study of points, lines, and shapes",
-                        "subClasses": {}
+                    "Spaces/": {
+                        "name": "Spaces",
+                        "description": "The study of spaces in math",
+                        "subClasses": {
+                            "Geometry/": {
+                                "name": "Geometry",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "Trigonometry/": {
+                                "name": "Trigonometry",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "FractalGeometry/": {
+                                "name": "Fractal Geometry",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "Topology/": {
+                                "name": "Topology",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            },
+                            "DifferentialGeometry/": {
+                                "name": "Differential Geometry",
+                                "description": "Everything about the structure of mathematics",
+                                "subClasses": {}
+                            }
+                        }
                     },
-                    "Calculus/": {
-                        "name": "Calculus",
-                        "description": "Deepen your understanding of functions by finding derivatives and integrals",
-                        "subClasses": {}
+                    "Changes/": {
+                        "name": "Changes",
+                        "description": "The study of how things change",
+                        "subClasses": {
+                            "Caclulus/": {
+                                "name": "Calculus",
+                                "description": "The study of how things change",
+                                "subClasses": {
+                                    "IntroToCalculus/": {
+                                        "name": "Introduction To Calculus",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                    },
+                                    "ParadoxOfDerivative/": {
+                                        "name": "The Paradox of the Derivative",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/9vKqVkMQHKk"
+                                    },
+                                    "DerivativeGeometry/": {
+                                        "name": "Derivative formulas through geometry",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/S0_qX4VJhMQ"
+                                    },
+                                    "ChainRule/": {
+                                        "name": "Visualizing the chain rule and product rule",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/YG15m2VwSjA"
+                                    },
+                                    "EulersNumber/": {
+                                        "name": "Euler's Number",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/m2MIpDrF7Es"
+                                    },
+                                    "ImplicitDifferentiation/": {
+                                        "name": "Implicit differentiation",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/qb40J4N1fa4"
+                                    },
+                                    "LHopitalsRule/": {
+                                        "name": "L'Hopital's rule",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/kfF40MiS7zA"
+                                    },
+                                    "Integration/": {
+                                        "name": "Integration",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/rfG8ce4nNh0"
+                                    },
+                                    "AreaAndSlope/": {
+                                        "name": "Area and Slope",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/FnJqaIESC2s"
+                                    },
+                                    "HigherOrderDerivatives/": {
+                                        "name": "Higher order derivatives",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/BLkz5LGWihw"
+                                    },
+                                    "TaylorSeries/": {
+                                        "name": "Higher order derivatives",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/3d6DsjIBzJ4"
+                                    },
+                                    "WontTeach/": {
+                                        "name": "PLEASE RENAME",
+                                        "description": "Lorem Ipsum",
+                                        "URL": "https://www.youtube.com/embed/CfW845LNObM"
+                                    }
+                                }
+                            },
+                            "MultivariableCaclulus/": {
+                                "name": "Multivariable Caclulus",
+                                "description": "How To analyze different variables",
+                                "subClasses": {}
+                            },
+                            "DifferentialEquations/": {
+                                "name": "Differential Equations",
+                                "description": "Using Differential Equations",
+                                "subClasses": {}
+                            },
+                            "DynamicSystems/": {
+                                "name": "Dynamic Systems",
+                                "description": "The study of how things change",
+                                "subClasses": {}
+                            },
+                            "ChaosTheory/": {
+                                "name": "Chaos Theory",
+                                "description": "The study of how things change",
+                                "subClasses": {}
+                            },
+                            "ComplexAnalysis/": {
+                                "name": "Complex Analysis",
+                                "description": "The study of how things change",
+                                "subClasses": {}
+                            }
+                        }
                     },
-                    "DiscreteMathematics/": {
-                        "name": "Discrete Mathematics",
-                        "description": "Lorem ipsum dolor sit amet",
-                        "subClasses": {}
+                    "Economics/": {
+                        "name": "Economics",
+                        "description": "Everything to do with money",
+                        "subClasses": {
+                            "GameTheory/": {
+                                "name": "Game Theory",
+                                "description": "Everything to do with money",
+                                "subClasses": {}
+                            }
+                        }
                     },
-                    "Statistics/": {
-                        "name": "Statistics",
-                        "description": "Lorem ipsum dolor sit amet",
-                        "subClasses": {}
+                    "Chance/": {
+                        "name": "Chance",
+                        "description": "Describing and modeling probable models",
+                        "subClasses": {
+                            "Probability/": {
+                                "name": "Probability",
+                                "description": "Everything to do with chance",
+                                "subClasses": {}
+                            },
+                            "Statistics/": {
+                                "name": "Statistics",
+                                "description": "Modeling distributions",
+                                "subClasses": {}
+                            }
+                        }
+                    },
+                    "Foundations/": {
+                        "name": "Foundations",
+                        "description": "Irrational numbers",
+                        "subClasses": {
+                            "Logic/": {
+                                "name": "Logic",
+                                "description": "Logical arguments",
+                                "subClasses": {}
+                            },
+                            "Induction/": {
+                                "name": "Proofs by Induction",
+                                "description": "Proofs by Mathematical Induction",
+                                "subClasses": {}
+                            },
+                            "SetTheory/": {
+                                "name": "Set Theory",
+                                "description": "Everything to do with money",
+                                "subClasses": {}
+                            },
+                            "FundementalRules/": {
+                                "name": "Fundemental Rules",
+                                "description": "The axioms of mathematics and incompleteness",
+                                "subClasses": {}
+                            }
+                        }
                     }
                 }
             },
@@ -170,8 +387,496 @@
             },
             "ComputerScience/": {
                 "name": "Computer Science",
-                "description": "Lorem ipsum dolor sit amet",
-                "subClasses": {}
+                "description": "Everyhing to know about Programming",
+                "subClasses": {
+                    "Linux/": {
+                        "name": "Linux",
+                        "description": "Everything about linux operating system",
+                        "subClasses": {
+                            "LinuxCourseIntro/": {
+                                "name": "Linux Course Introduction",
+                                "description": "This video is an introduction to my  free Linux course for beginners, where we'll cover the skills needed to go from a Linux beginner to an intermediate-level sysadmin",
+                                "URL": "https://www.youtube.com/embed/bju_FdCo42w"
+                            },
+                            "SetUp/": {
+                                "name": "Set Up",
+                                "description": "Learn how to set up Linux so that it will simply run like any other application, so you can play around with GNU/Linux in a safe environment without risking any of your other programs and data.",
+                                "URL": "https://www.youtube.com/embed/OLK49ZTbmWM"
+                            },
+                            "CommandLineBasics/": {
+                                "name": "Command-Line Basics",
+                                "description": "This video covers the ABSOLUTE BASICS of the Linux command-line. You'll learn the basic commands for moving around the filesystem and doing basic tasks in the Linux shell",
+                                "URL": "https://www.youtube.com/embed/Lbh8Bh_SEzU"
+                            },
+                            "TextEditors/": {
+                                "name": "Text Editors",
+                                "description": "A quick review of the basic commands from the last video, plus an overview of vim and nano as command-line text editors",
+                                "URL": "https://www.youtube.com/embed/fEGSA68uAR4"
+                            },
+                            "ShellFeatures/": {
+                                "name": "Shell Features",
+                                "description": "Learn how to use two of the most powerful concepts of the Linux shell: Input/Output Redirection and Pipes.",
+                                "URL": "https://www.youtube.com/embed/-Z5tCri-QlI"
+                            },
+                            "PackageManagement/": {
+                                "name": "Package Management",
+                                "description": "Basic package management with Debian's apt-get command-line tool",
+                                "URL": "https://www.youtube.com/embed/8P-Vek7Vtgg"
+                            },
+                            "FilePermissions/": {
+                                "name": "File Permissions",
+                                "description": "A basic overview (without diving into Binary notation) of Linux and Unix file permissions",
+                                "URL": "https://www.youtube.com/embed/8SkN7UofOww"
+                            },
+                            "AccessControl/": {
+                                "name": "Access Control",
+                                "description": "A quick intro on how Unix and Linux handle access control",
+                                "URL": "https://www.youtube.com/embed/WhCIuGjhH-0"
+                            },
+                            "UserAccountManagement/": {
+                                "name": "User Account Management",
+                                "description": "Learn how to create new users on Linux (and how to remove Linux users). This video gives you a quick rundown of basic Linux commands like useradd, userdel, and usermod",
+                                "URL": "https://www.youtube.com/embed/UN1QB5BIvps"
+                            },
+                            "Processes/": {
+                                "name": "Processes",
+                                "description": "What are processes in Linux?",
+                                "URL": "https://www.youtube.com/embed/ls5cGi12kGw"
+                            },
+                            "Signals/": {
+                                "name": "Signals",
+                                "description": "In this video I take a look at Linux inter-process communication using signals",
+                                "URL": "https://www.youtube.com/embed/lP7xoqkqDZQ"
+                            },
+                            "States/": {
+                                "name": "States",
+                                "description": "Learn how to control CPU scheduling priority for processes, change process state, and see a cool tool (htop) for in-depth process monitoring and management.",
+                                "URL": "https://www.youtube.com/embed/vsEJz9aKGKU"
+                            },
+                            "Filesystem/": {
+                                "name": "Filesystem",
+                                "description": "An overview of the /proc filesystem on Linux",
+                                "URL": "https://www.youtube.com/embed/0XdjODvsRN8"
+                            },
+                            "Pathnames/": {
+                                "name": "Pathnames",
+                                "description": "Here you'll learn the basics of what the Filesystem API is used for in Linux",
+                                "URL": "https://www.youtube.com/embed/ar37viZGQwk"
+                            },
+                            "FilesystemLayoutOverview/": {
+                                "name": "Filesystem Layout Overview",
+                                "description": "An introduction and basic overview of how the linux filesystem is laid out",
+                                "URL": "https://www.youtube.com/embed/svh8sSuz5BI"
+                            },
+                            "FilesystemLayout/": {
+                                "name": "Filesystem Layout",
+                                "description": "A description of all that stuff in root",
+                                "URL": "https://www.youtube.com/embed/TG5YJe9camA"
+                            },
+                            "FileTypes/": {
+                                "name": "File Types",
+                                "description": "File Types in Linux",
+                                "URL": "https://www.youtube.com/embed/EDgkcvOoY8A"
+                            },
+                            "Scheduling/": {
+                                "name": "Scheduling",
+                                "description": "A quick introduction to cron for people who want to manage scheduled and recurring tasks on Linux systems",
+                                "URL": "https://www.youtube.com/embed/8j0SWYNglcw"
+                            },
+                            "Tmux/": {
+                                "name": "Tmux",
+                                "description": "How to manage your remote terminal sessions with tmux",
+                                "URL": "https://www.youtube.com/embed/BHhA_ZKjyxo"
+                            },
+                            "SharedSessions/": {
+                                "name": "Shared Sessions",
+                                "description": "This video will show you how to quickly create shared tmux sessions, which allow several people to collaboratively use a single shell session",
+                                "URL": "https://www.youtube.com/embed/norO25P7xHg"
+                            },
+                            "Archiving/": {
+                                "name": "Archiving",
+                                "description": "Archiving and Compressing on Linux",
+                                "URL": "https://www.youtube.com/embed/tSRlNwaUgPQ"
+                            },
+                            "BashScripting/": {
+                                "name": "Bash Scripting",
+                                "description": "All Bash Scripting",
+                                "subClasses": {
+                                    "Intro/": {
+                                        "name": "Intro to Bash Scripting",
+                                        "description": "This first video is a quick introduction to the course",
+                                        "URL": "https://www.youtube.com/embed/xtS2NiABf54"
+                                    },
+                                    "BashBasics/": {
+                                        "name": "Bash Scripting Basics",
+                                        "description": "Bash basics, including how input/output redirection works in bash, logical AND, logical OR, appending vs overwriting files with output, some coverage of file descriptors",
+                                        "URL": "https://www.youtube.com/embed/4-hw6DPBlsw"
+                                    },
+                                    "VariablesQuoting/": {
+                                        "name": "Variables and Quoting",
+                                        "description": "Bash Variables and Quoting -- two basic bash scripting concepts that you'll need to use the Bash shell effectively.",
+                                        "URL": "https://www.youtube.com/embed/MYWvVgIL_Ys"
+                                    },
+                                    "Scripts/": {
+                                        "name": "Scripts",
+                                        "description": "An introduction to the shebang line, bash exit codes, and different ways of running bash scripts",
+                                        "URL": "https://www.youtube.com/embed/U2_MvxnqLRE"
+                                    },
+                                    "Arguments/": {
+                                        "name": "Arguments",
+                                        "description": "A quick video covering the basics of arguments in Bash scripting",
+                                        "URL": "https://www.youtube.com/embed/Vbu8rfVaABw"
+                                    },
+                                    "Testing/": {
+                                        "name": "Testing",
+                                        "description": "Conditionals and Testing in Bash",
+                                        "URL": "https://www.youtube.com/embed/VMZBFjYgjR4"
+                                    },
+                                    "Functions/": {
+                                        "name": "Functions",
+                                        "description": "A quick primer on bash scripting functions",
+                                        "URL": "https://www.youtube.com/embed/9EfN5clA710"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "CodingBasics/": {
+                        "name": "Coding Basics",
+                        "description": "Learn the basics of coding",
+                        "subClasses": {
+                            "Scripting/": {
+                                "name": "Scripting",
+                                "description": "Introduction To Scripting in Python",
+                                "subClasses": {}
+                            },
+                            "DataStructures/": {
+                                "name": "DataStructures",
+                                "description": "Methods of storing data",
+                                "subClasses": {
+                                    "Array/": {
+                                        "name": "Array",
+                                        "description": "Storing Data in a Array",
+                                        "subClasses": {}
+                                    },
+                                    "LinkedList/": {
+                                        "name": "Linked List",
+                                        "description": "Storing Data in a LinkedList",
+                                        "subClasses": {}
+                                    },
+                                    "Tree/": {
+                                        "name": "Tree",
+                                        "description": "Storing Data in a tree",
+                                        "subClasses": {}
+                                    },
+                                    "Heap/": {
+                                        "name": "Heap",
+                                        "description": "Storing Data in a heap",
+                                        "subClasses": {}
+                                    },
+                                    "Set/": {
+                                        "name": "Set",
+                                        "description": "Storing Data in a set",
+                                        "subClasses": {}
+                                    },
+                                    "HashMap/": {
+                                        "name": "HashMap",
+                                        "description": "Storing Data in a tree",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "ObjectOriented/": {
+                                "name": "Object Oriented Programming in Java",
+                                "description": "For when scripting isnt enough",
+                                "subClasses": {
+                                    "IntrodJava/": {
+                                        "name": "Introduction To Java",
+                                        "description": "All of the basics repeated into java!",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "LowLevel/": {
+                                "name": "Low Level Programming",
+                                "description": "Learning How the computer actually deals with code",
+                                "subClasses": {
+                                    "CProgramming/": {
+                                        "name": "Memory Allocation",
+                                        "description": "Shows how memory is stored for dynamic memory allocation",
+                                        "subClasses": {
+                                            "IntroC/": {
+                                                "name": "Introduction To C",
+                                                "description": "Basics and how to set up C and the C Compiler",
+                                                "subClasses": {}
+                                            },
+                                            "Pointers/": {
+                                                "name": "Pointers",
+                                                "description": "What a pointer is and how it is different from a reference",
+                                                "subClasses": {}
+                                            },
+                                            "MemoryAllocation/": {
+                                                "name": "Memory Allocation",
+                                                "description": "Shows how memory is stored for dynamic memory allocation",
+                                                "subClasses": {}
+                                            },
+                                            "MakeFiles/": {
+                                                "name": "Memory Allocation",
+                                                "description": "Shows how memory is stored for dynamic memory allocation",
+                                                "subClasses": {}
+                                            },
+                                            "InputOutput/": {
+                                                "name": "Input Output",
+                                                "description": "File Input Output in C",
+                                                "subClasses": {}
+                                            },
+                                            "Processes/": {
+                                                "name": "Processes",
+                                                "description": "Shows how memory is stored for dynamic memory allocation",
+                                                "subClasses": {}
+                                            },
+                                            "FilePointers/": {
+                                                "name": "File Pointers",
+                                                "description": "Dup2 and how to switch IO",
+                                                "subClasses": {}
+                                            }
+                                        }
+                                    },
+                                    "AssemblyProgramming/": {
+                                        "name": "Assembly",
+                                        "description": "Even Lower Level than C",
+                                        "subClasses": {}
+                                    },
+                                    "MachineCode/": {
+                                        "name": "Machine Code",
+                                        "description": "For the really nitty gritty",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "FunctionalProgramming/": {
+                                "name": "Functional Programming",
+                                "description": "Structure of a functional programming language",
+                                "subClasses": {}
+                            },
+                            "Parsing/": {
+                                "name": "Parsing",
+                                "description": "How a computer reacts to dynamic Inputs",
+                                "subClasses": {
+                                    "RegularExpressions/": {
+                                        "name": "Regular Expressions",
+                                        "description": "A complete guide through regular expressions",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "Algorithms/": {
+                                "name": "Algorithms",
+                                "description": "Analysing Runtime for algorithms",
+                                "subClasses": {
+                                    "SortingAlgorithms/": {
+                                        "name": "Sorting Algorithms",
+                                        "description": "Different Ways to Sort Data",
+                                        "subClasses": {
+                                            "BubbleSort/": {
+                                                "name": "BubbleSort",
+                                                "description": "The most basic method of sorting",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "SelectionSort/": {
+                                                "name": "Selection Sort",
+                                                "description": "Sort by selecting the next highest number",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "InsertionSort/": {
+                                                "name": "Insertion Sort",
+                                                "description": "Insertion Sort",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "MergeSort/": {
+                                                "name": "Merge Sort",
+                                                "description": "A recursive Sorting algorithm",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "HeapSort/": {
+                                                "name": "Heap Sort",
+                                                "description": "Sorting Using a Heap",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "QuickSort/": {
+                                                "name": "Quick Sort",
+                                                "description": "Recursive Sort Using a partition",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "RadixSort/": {
+                                                "name": "Radix Sort",
+                                                "description": "Sort over a discrete range",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            },
+                                            "BucketSort/": {
+                                                "name": "Bucket Sort",
+                                                "description": "Sorting in Linear Time",
+                                                "URL": "https://www.youtube.com/embed/WUvTyaaNkzM"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Git/": {
+                        "name": "Git",
+                        "description": "Introduction to Git and how to use remote repositories",
+                        "subClasses": {
+                            "GitIntro/": {
+                                "name": "Git Course Introduction",
+                                "description": "In this Git tutorial I'll explain why we should be using git for all of our projects",
+                                "URL": "https://www.youtube.com/embed/3RjQznt-8kE"
+                            },
+                            "GitInstall/": {
+                                "name": "Git Install",
+                                "description": "In this Git tutorial I'll show you how to install git on your computer, and set up a few basic config options",
+                                "URL": "https://www.youtube.com/embed/MFtsLRphqDM"
+                            },
+                            "GitBasics/": {
+                                "name": "Git Basics",
+                                "description": "In this Git tutorial for beginners, I'll explain how Git works in order to track your project files",
+                                "URL": "https://www.youtube.com/embed/iNP_KmOFqXs"
+                            },
+                            "Repository/": {
+                                "name": "Repository",
+                                "description": "In this git tutorial I'll show you how to create a new repository which Git can track changes in",
+                                "URL": "https://www.youtube.com/embed/v0Ch3yWQ-Zc"
+                            },
+                            "Staging/": {
+                                "name": "Staging",
+                                "description": "In this Git tutorial I'll introduce you to staging files",
+                                "URL": "https://www.youtube.com/embed/KngvG8WzYLU"
+                            },
+                            "Commits/": {
+                                "name": "Commits",
+                                "description": "In this Git tutorial I'll show you how to make commits",
+                                "URL": "https://www.youtube.com/embed/Fhgga2s_RmM"
+                            },
+                            "Undo/": {
+                                "name": "Undo",
+                                "description": "In this Git tutorial I'll show you how to start undoing your changes",
+                                "URL": "https://www.youtube.com/embed/RIYrfkZjWmA"
+                            },
+                            "Branches/": {
+                                "name": "Branches",
+                                "description": "In this git tutorial I'll introduce you to branching",
+                                "URL": "https://www.youtube.com/embed/QV0kVNvkMxc"
+                            },
+                            "MergingBranches/": {
+                                "name": "Merging Branches",
+                                "description": "In this git tutorial I'll show you how to merge branches back into the master branch",
+                                "URL": "https://www.youtube.com/embed/XX-Kct0PfFc"
+                            },
+                            "Github/": {
+                                "name": "Github",
+                                "description": "In this git & github tutorial I'll introduce you to what GitHub is, and how you can use it to store remote repositories",
+                                "URL": "https://www.youtube.com/embed/fQLK8Ib_SKk"
+                            },
+                            "Collaborations/": {
+                                "name": "Collaborations",
+                                "description": "In this Git & GitHub tutorial I'll show you how you'd typically collaborate on a team project",
+                                "URL": "https://www.youtube.com/embed/MnUd31TvBoU"
+                            },
+                            "Forking/": {
+                                "name": "Forking",
+                                "description": "In this Git & GitHub tutorial I want to show you how you can fork a repository to your own GitHub account",
+                                "URL": "https://www.youtube.com/embed/HbSjyU2vf6Y"
+                            }
+                        }
+                    },
+                    "WebDesign/": {
+                        "name": "Web Design",
+                        "description": "Field of Web Design",
+                        "subClasses": {
+                            "Basics/": {
+                                "name": "Basics",
+                                "description": "The Base Languages of Web Design",
+                                "subClasses": {
+                                    "HTML/": {
+                                        "name": "HTML",
+                                        "description": "Everything you need to know about HTML",
+                                        "subClasses": {}
+                                    },
+                                    "CSS/": {
+                                        "name": "CSS",
+                                        "description": "Everything You need to know about Cascading Style Sheets",
+                                        "subClasses": {}
+                                    },
+                                    "Javascript/": {
+                                        "name": "Javascript",
+                                        "description": "Introduction to Javascript",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "FrontEnd/": {
+                                "name": "Front End Development",
+                                "description": "Different methods to make your website look beautiful",
+                                "subClasses": {
+                                    "ReactJS/": {
+                                        "name": "ReactJS",
+                                        "description": "Basics of Using ReactJS",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "BackEnd/": {
+                                "name": "Back End Development",
+                                "description": "Making a server for your website",
+                                "subClasses": {
+                                    "NodeJS/": {
+                                        "name": "NodeJS",
+                                        "description": "Basics of Server Side Programming",
+                                        "subClasses": {}
+                                    },
+                                    "Express/": {
+                                        "name": "Express",
+                                        "description": "Making a Server",
+                                        "subClasses": {}
+                                    }
+                                }
+                            },
+                            "APIs/": {
+                                "name": "APIs",
+                                "description": "How to use an API",
+                                "subClasses": {}
+                            }
+                        }
+                    },
+                    "DataScience/": {
+                        "name": "Data Science",
+                        "description": "Collecting and Analysing Data",
+                        "subClasses": {
+                            "IntroDataScience/": {
+                                "name": "Introduction to Data Science",
+                                "description": "Introduction and required libraries such as Pandas",
+                                "subClasses": {}
+                            },
+                            "WebScraping/": {
+                                "name": "Web Scraping",
+                                "description": "How to collect data from a website",
+                                "subClasses": {}
+                            }
+                        }
+                    },
+                    "GameProgramming/": {
+                        "name": "Game Programming",
+                        "description": "How to make all sorts of video games",
+                        "subClasses": {
+                            "Unity/": {
+                                "name": "Unity",
+                                "description": "Introduction to the Unity Game Engine",
+                                "subClasses": {}
+                            }
+                        }
+                    }
+                }
             }
         }
     }

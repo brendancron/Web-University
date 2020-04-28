@@ -25,8 +25,10 @@ export default class SelectTab extends React.Component {
         })
     }
     renderImg() {
+        console.log(this.props.data);
+        const imgPath = this.props.data.path.match('^/(?:[a-zA-Z0-9]+/)*([a-zA-Z0-9]+)/$')[1];
         try {
-            return <img src={require(`../images${this.props.data.path}.svg`)} alt="default img" />
+            return <img src={require(`../images/${imgPath}.svg`)} alt="default img" />
         } catch (err) {
             return <img src={require('../images/default.svg')} alt="default img" />
         }

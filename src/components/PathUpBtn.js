@@ -6,7 +6,7 @@ export default class Lesson extends React.Component {
     render() {
         let upURL = '/';
         if (this.props.URL !== '/') {
-            var patt = "^(/(?:[a-zA-Z]+/)*)[a-zA-Z]+/$";
+            var patt = "^(/(?:[a-zA-Z0-9]+/)*)[a-zA-Z0-9]+/$";
             upURL = this.props.URL.match(patt)[1];
         }
         return (
